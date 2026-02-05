@@ -1,0 +1,40 @@
+name: Build and Release
+
+permissions:
+  contents: write
+
+on:
+  push:
+    tags:
+      - '*'   # Run automatically when any tag is pushed
+  workflow_dispatch:
+    inputs:
+      version:
+        description: "Version tag for the release (e.g. 1.2.3)"
+        required: false
+        type: string
+
+jobs:
+  build:
+    name: Build and Upload Release
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Build the app
+        run: make build-package
+
+      - name: Create GitHub Release
+        id: create_release
+        uses: softprops/action-gh-release@v2
+        with:
+          tag_name: ${{ inputs.version || github.ref_name }}
+          name: Release ${{ inputs.version || github.ref_name }}
+          draft: true
+          prerelease: true
+          files: |
+            axoflow_forwarder-*.spl
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

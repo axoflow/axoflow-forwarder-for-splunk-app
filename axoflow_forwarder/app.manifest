@@ -1,0 +1,51 @@
+{
+  "schemaVersion": "2.0.0",
+  "info": {
+    "title": "Axoflow Forwarder Add-on",
+    "id": {
+      "group": null,
+      "name": "axoflow_forwarder",
+      "version": "0.8.0"
+    },
+    "author": [
+      {
+        "name": "Axoflow Inc.",
+        "email": "support@axoflow.com",
+        "company": "Axoflow Inc."
+      }
+    ],
+    "releaseDate": null,
+    "description": "Splunk Add-on for forwarding logs from Splunk to the Axoflow Platform",
+    "classification": {
+      "intendedAudience": null,
+      "categories": [],
+      "developmentStatus": null
+    },
+    "commonInformationModels": null,
+    "license": {
+      "name": "Apache License 2.0",
+      "text": "LICENSE-2.0.txt",
+      "uri": "https://www.apache.org/licenses/LICENSE-2.0.txt"
+    },
+    "privacyPolicy": {
+      "name": null,
+      "text": null,
+      "uri": null
+    },
+    "releaseNotes": {
+      "name": null,
+      "text": null,
+      "uri": null
+    }
+  },
+  "dependencies": null,
+  "tasks": null,
+  "inputGroups": null,
+  "incompatibleApps": null,
+  "platformRequirements": null,
+  "supportedDeployments": [
+    "_standalone",
+    "_distributed"
+  ],
+  "targetWorkloads": null
+}
