@@ -1,21 +1,8 @@
-Axoflow Forwarder Add-on
-
+# Axoflow Forwarder Add-on for Splunk
 
 ## OVERVIEW
 
 Installing this add-on will allow Splunk Heavy Forwarder nodes to forward logs to the [Axoflow Platform](https://axoflow.com/axoflow-platform/).
-
-
-## LICENSE
-
-Copyright (c) 2025 Axoflow, Inc.
-
-Licensed under the Apache License, Version 2.0 (the "License");
-you may not use this file except in compliance with the License.
-You may obtain a copy of the License at
-
-http://www.apache.org/licenses/LICENSE-2.0
-
 
 ## NOTICE
 
@@ -67,6 +54,17 @@ https://axoflow.com/docs/axoflow/data-sources/appliances/splunk/splunk/
 ## SUPPORT
 
 In case you need assistance or run into issues, contact us at support@axoflow.com
+
+## LICENSE
+
+Copyright (c) 2025 Axoflow, Inc.
+
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+http://www.apache.org/licenses/LICENSE-2.0
+
 
 
 ## DOCUMENTATION
