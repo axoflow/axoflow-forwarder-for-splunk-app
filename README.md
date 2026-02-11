@@ -1,9 +1,8 @@
-## Contents
+### Purpose
 
-- v1-sc4s is the original version of the app, used to develop and test AxoRouter classification and parsing
-- axoflow_forwarder is the current version, that can be installed without affecting to the original configuration of the HF
+Forward logs to the Axoflow Platform from Splunk Heavy Forwarders.
 
-Further instructions about the usage can be found in the [package readme](axoflow_forwarder/README.md)
+### Build and validate
 
 To build the app with the same version, run:
 ```
@@ -15,9 +14,11 @@ To run the verification functionality of the Splunk Packaging Toolkit, run:
 make validate-package
 ```
 
-Updating the package version
+### Release
 
 Currently two files need to be updated to ensure a successful version bump:
 
 - ./axoflow_forwarder/app.manifest
 - ./axoflow_forwarder/default/app.conf
+
+Once versions are updated simply create a tag to trigger a new github release.
